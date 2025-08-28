@@ -1,0 +1,41 @@
+.container{
+    text-align: center;
+    margin-top: 50px;
+    color:white;
+    font-family: KGRedHands;
+}
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: rgb(20, 19, 19);
+}
+#slideshow {
+    display: flex;
+  width: 850px;      
+  height: 650px;     
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#slideshow img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+#slideshow img.active {
+  display: block; 
+  width: auto; 
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+@font-face {
+  font-family: KGRedHands;
+  src: url(./fontes/KGRedHands.ttf);
+}
